@@ -1,0 +1,158 @@
+:root {
+  --vermelho-principal: #c0392b;
+  --vermelho-claro: #e74c3c;
+  --vermelho-escuro: #922b21;
+  --texto: #333;
+  --fundo: #fff5f5;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  color: var(--texto);
+  background-color: var(--fundo);
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.topbar {
+  background: var(--vermelho-principal);
+  color: #fff;
+  padding: 0.5rem 0;
+}
+
+.topbar__wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+}
+
+.brand__logo {
+  font-size: 2rem;
+  margin-right: 0.5rem;
+  color: var(--vermelho-claro);
+}
+
+.nav {
+  background: var(--vermelho-escuro);
+}
+
+.nav__wrap {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.nav__wrap a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0.8rem 1.2rem;
+  transition: background 0.3s;
+}
+
+.nav__wrap a:hover {
+  background: var(--vermelho-claro);
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 0;
+}
+
+.hero__thumb {
+  width: 40%;
+  height: 220px;
+  background: url('https://cdn.pixabay.com/photo/2018/01/16/07/40/heart-3087909_960_720.jpg') center/cover;
+  border-radius: 10px;
+}
+
+.hero__pontos {
+  list-style: none;
+  padding-left: 0;
+}
+
+.grid {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.grid__main {
+  flex: 2;
+}
+
+.grid__aside {
+  flex: 1;
+  background: #fff;
+  border-left: 4px solid var(--vermelho-claro);
+  padding: 1rem;
+  border-radius: 6px;
+}
+
+.card {
+  background: #fff;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border-left: 5px solid var(--vermelho-principal);
+  border-radius: 6px;
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: scale(1.02);
+}
+
+.card__title {
+  margin: 0 0 0.3rem;
+  color: var(--vermelho-principal);
+}
+
+.btn-outline {
+  background: transparent;
+  color: var(--vermelho-principal);
+  border: 1px solid var(--vermelho-principal);
+  padding: 0.4rem 0.8rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-outline:hover {
+  background: var(--vermelho-principal);
+  color: #fff;
+}
+
+.footer {
+  background: var(--vermelho-escuro);
+  color: #fff;
+  padding: 1rem 0;
+  margin-top: 2rem;
+}
+
+.footer__wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 0.5rem;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
