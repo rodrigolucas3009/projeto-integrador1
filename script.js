@@ -10,7 +10,7 @@ if (menuToggle && mainNav) {
   });
 }
 
-// Acessibilidade com Tab
+// Mostrar borda de foco quando usa Tab
 document.addEventListener('keydown', (e) => {
   if (e.key === 'Tab') document.body.classList.add('show-focus');
 });
