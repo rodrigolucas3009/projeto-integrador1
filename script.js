@@ -1,17 +1,16 @@
-document.addEventListener("DOMContentLoaded", function () {
-    const botoes = document.querySelectorAll(".botao-curso");
+// Alternar menu no celular
+const menuToggle = document.getElementById('menuToggle');
+const mainNav = document.querySelector('.main-nav');
 
-    botoes.forEach(function (botao) {
-        botao.addEventListener("mouseover", function () {
-            botao.style.transform = "scale(1.1)";
-        });
+if (menuToggle && mainNav) {
+  menuToggle.addEventListener('click', () => {
+    const expanded = menuToggle.getAttribute('aria-expanded') === 'true';
+    menuToggle.setAttribute('aria-expanded', String(!expanded));
+    mainNav.style.display = expanded ? 'none' : 'block';
+  });
+}
 
-        botao.addEventListener("mouseout", function () {
-            botao.style.transform = "scale(1)";
-        });
-
-        botao.addEventListener("click", function (e) {
-            alert(`Você clicou em ${botao.textContent}!`);
-        });
-    });
+// Acessibilidade com Tab
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Tab') document.body.classList.add('show-focus');
 });
