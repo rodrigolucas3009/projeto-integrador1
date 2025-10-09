@@ -20,6 +20,11 @@ body {
   margin: 0 auto;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .topbar {
   background: var(--vermelho-principal);
   color: #fff;
@@ -29,18 +34,29 @@ body {
 .topbar__wrap {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .brand {
   display: flex;
   align-items: center;
+  text-align: center;
 }
 
 .brand__logo {
   font-size: 2rem;
   margin-right: 0.5rem;
   color: var(--vermelho-claro);
+}
+
+.brand__text strong {
+  font-size: 1.3rem;
+}
+
+.brand__text small {
+  display: block;
+  font-size: 0.8rem;
+  color: #ffeaea;
 }
 
 .nav {
@@ -55,7 +71,6 @@ body {
 
 .nav__wrap a {
   color: #fff;
-  text-decoration: none;
   padding: 0.8rem 1.2rem;
   transition: background 0.3s;
 }
@@ -69,6 +84,8 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 2rem 0;
+  gap: 1rem;
+  flex-wrap: wrap;
 }
 
 .hero__thumb {
@@ -107,31 +124,17 @@ body {
   padding: 1rem;
   border-left: 5px solid var(--vermelho-principal);
   border-radius: 6px;
-  transition: transform 0.2s ease;
+  transition: transform 0.2s ease, box-shadow 0.3s;
 }
 
 .card:hover {
   transform: scale(1.02);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
 .card__title {
   margin: 0 0 0.3rem;
   color: var(--vermelho-principal);
-}
-
-.btn-outline {
-  background: transparent;
-  color: var(--vermelho-principal);
-  border: 1px solid var(--vermelho-principal);
-  padding: 0.4rem 0.8rem;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-.btn-outline:hover {
-  background: var(--vermelho-principal);
-  color: #fff;
 }
 
 .footer {
@@ -147,12 +150,11 @@ body {
   align-items: center;
 }
 
-.footer a {
+.footer nav a {
   color: #fff;
-  text-decoration: none;
   margin: 0 0.5rem;
 }
 
-.footer a:hover {
+.footer nav a:hover {
   text-decoration: underline;
 }
