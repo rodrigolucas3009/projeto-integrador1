@@ -1,0 +1,66 @@
+/* Curiosidades - tons rosados/violeta */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: linear-gradient(to bottom right, #fff0f7, #fce4ec);
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background-color: #ad1457;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 12px;
+  font-weight: bold;
+  transition: color 0.3s, transform 0.2s;
+}
+
+nav a:hover {
+  color: #ffd6e6;
+  transform: scale(1.05);
+}
+
+main {
+  flex: 1;
+  padding: 40px 10%;
+}
+
+section {
+  background-color: #f8bbd0;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(173,20,87,0.2);
+  transition: transform 0.2s;
+}
+
+section:hover {
+  transform: scale(1.01);
+}
+
+h2 {
+  color: #880e4f;
+  margin-bottom: 15px;
+}
+
+footer {
+  background-color: #ad1457;
+  color: white;
+  text-align: center;
+  padding: 12px;
+  box-shadow: 0 -2px 5px rgba(0,0,0,0.2);
+}
