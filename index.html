@@ -1,160 +1,117 @@
-:root {
-  --vermelho-principal: #c0392b;
-  --vermelho-claro: #e74c3c;
-  --vermelho-escuro: #922b21;
-  --texto: #333;
-  --fundo: #fff5f5;
-}
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Educa+ Sexualidade — Portal</title>
+  <meta name="description" content="Portal educativo sobre sexualidade e prevenção à violência para adolescentes e educadores." />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="data:," />
+</head>
+<body>
+  <header class="topbar" role="banner">
+    <div class="container topbar__wrap">
+      <div class="brand">
+        <span class="brand__logo" aria-hidden="true">+</span>
+        <div class="brand__text">
+          <strong>Educa<span>+</span>Sexualidade</strong>
+          <small>Informação segura para a adolescência</small>
+        </div>
+      </div>
+    </div>
+  </header>
 
-body {
-  margin: 0;
-  font-family: "Segoe UI", Arial, sans-serif;
-  color: var(--texto);
-  background-color: var(--fundo);
-  line-height: 1.6;
-}
+  <nav id="nav" class="nav" role="navigation" aria-label="Seções do portal">
+    <div class="container nav__wrap">
+      <a href="abuso.html">Abuso sexual</a>
+      <a href="violencia.html">Tipos de violência</a>
+      <a href="curiosidades.html">Curiosidades & descobertas</a>
+      <a href="orientacao.html">Orientação sexual</a>
+      <a href="condutas.html">Condutas seguras</a>
+    </div>
+  </nav>
 
-.container {
-  width: 90%;
-  max-width: 1100px;
-  margin: 0 auto;
-}
+  <main id="conteudo" class="container layout">
+    <section class="hero" aria-labelledby="hero-titulo">
+      <div>
+        <h1 id="hero-titulo">Informação clara para decisões seguras</h1>
+        <p>Conteúdos preparados para o 1º ano do Ensino Médio, com linguagem simples, fonte confiável e links de ajuda.</p>
+        <ul class="hero__pontos">
+          <li>Consentimento e limites</li>
+          <li>Como pedir ajuda e denunciar</li>
+          <li>Viver a sexualidade com respeito e responsabilidade</li>
+        </ul>
+      </div>
+      <figure class="hero__thumb" aria-hidden="true"></figure>
+    </section>
 
-a {
-  text-decoration: none;
-  color: inherit;
-}
+    <section aria-labelledby="ultimas-titulo" class="grid">
+      <div class="grid__main">
+        <h2 id="ultimas-titulo">Últimas publicações</h2>
 
-.topbar {
-  background: var(--vermelho-principal);
-  color: #fff;
-  padding: 0.5rem 0;
-}
+        <article class="card">
+          <a href="abuso.html" class="card__link">
+            <h3 class="card__title">O que é abuso sexual e como identificar</h3>
+            <p class="card__desc">Sinais de alerta, mitos comuns e o papel do consentimento. Saiba como agir e a quem recorrer.</p>
+          </a>
+        </article>
 
-.topbar__wrap {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+        <article class="card">
+          <a href="violencia.html" class="card__link">
+            <h3 class="card__title">Tipos de violência: física, psicológica, sexual e digital</h3>
+            <p class="card__desc">Entenda diferenças, exemplos do cotidiano e canais de proteção na escola e na internet.</p>
+          </a>
+        </article>
 
-.brand {
-  display: flex;
-  align-items: center;
-  text-align: center;
-}
+        <article class="card">
+          <a href="curiosidades.html" class="card__link">
+            <h3 class="card__title">Puberdade: corpo, sentimentos e descobertas</h3>
+            <p class="card__desc">Mudanças físicas e emocionais, dúvidas comuns e como buscar informação confiável.</p>
+          </a>
+        </article>
 
-.brand__logo {
-  font-size: 2rem;
-  margin-right: 0.5rem;
-  color: var(--vermelho-claro);
-}
+        <article class="card">
+          <a href="orientacao.html" class="card__link">
+            <h3 class="card__title">Orientação sexual e respeito às diferenças</h3>
+            <p class="card__desc">O que é orientação sexual, por que o respeito importa e como combater o preconceito.</p>
+          </a>
+        </article>
 
-.brand__text strong {
-  font-size: 1.3rem;
-}
+        <article class="card">
+          <a href="condutas.html" class="card__link">
+            <h3 class="card__title">Condutas seguras e responsáveis na adolescência</h3>
+            <p class="card__desc">Consentimento, limites, internet, encontros e como cuidar de si e dos outros.</p>
+          </a>
+        </article>
+      </div>
 
-.brand__text small {
-  display: block;
-  font-size: 0.8rem;
-  color: #ffeaea;
-}
+      <aside class="grid__aside">
+        <h2>Ajuda e Denúncia</h2>
+        <div class="help">
+          <p><strong>Em risco imediato?</strong> Ligue <b>190</b> (Polícia Militar).</p>
+          <ul>
+            <li><b>Disque 100</b> — Direitos humanos.</li>
+            <li><b>180</b> — Central da Mulher.</li>
+            <li><b>197</b> — Polícia Civil.</li>
+          </ul>
+        </div>
+      </aside>
+    </section>
+  </main>
 
-.nav {
-  background: var(--vermelho-escuro);
-}
+  <footer class="footer" role="contentinfo">
+    <div class="container footer__wrap">
+      <p><strong>Educa+Sexualidade</strong> — material educativo para o 1º ano do EM.</p>
+      <nav aria-label="Links de rodapé">
+        <a href="abuso.html">Abuso sexual</a>
+        <a href="violencia.html">Tipos de violência</a>
+        <a href="curiosidades.html">Curiosidades</a>
+        <a href="orientacao.html">Orientação sexual</a>
+        <a href="condutas.html">Condutas seguras</a>
+      </nav>
+    </div>
+  </footer>
 
-.nav__wrap {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.nav__wrap a {
-  color: #fff;
-  padding: 0.8rem 1.2rem;
-  transition: background 0.3s;
-}
-
-.nav__wrap a:hover {
-  background: var(--vermelho-claro);
-}
-
-.hero {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 2rem 0;
-  gap: 1rem;
-  flex-wrap: wrap;
-}
-
-.hero__thumb {
-  width: 40%;
-  height: 220px;
-  background: url('https://cdn.pixabay.com/photo/2018/01/16/07/40/heart-3087909_960_720.jpg') center/cover;
-  border-radius: 10px;
-}
-
-.hero__pontos {
-  list-style: none;
-  padding-left: 0;
-}
-
-.grid {
-  display: flex;
-  gap: 2rem;
-  flex-wrap: wrap;
-}
-
-.grid__main {
-  flex: 2;
-}
-
-.grid__aside {
-  flex: 1;
-  background: #fff;
-  border-left: 4px solid var(--vermelho-claro);
-  padding: 1rem;
-  border-radius: 6px;
-}
-
-.card {
-  background: #fff;
-  margin-bottom: 1rem;
-  padding: 1rem;
-  border-left: 5px solid var(--vermelho-principal);
-  border-radius: 6px;
-  transition: transform 0.2s ease, box-shadow 0.3s;
-}
-
-.card:hover {
-  transform: scale(1.02);
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-}
-
-.card__title {
-  margin: 0 0 0.3rem;
-  color: var(--vermelho-principal);
-}
-
-.footer {
-  background: var(--vermelho-escuro);
-  color: #fff;
-  padding: 1rem 0;
-  margin-top: 2rem;
-}
-
-.footer__wrap {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.footer nav a {
-  color: #fff;
-  margin: 0 0.5rem;
-}
-
-.footer nav a:hover {
-  text-decoration: underline;
-}
+  <script src="script.js" defer></script>
+</body>
+</html>
