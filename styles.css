@@ -100,17 +100,22 @@ a:hover {
 }
 
 .hero__thumb {
-  width: 100%;
+  flex: 1;
+  min-width: 250px;
   max-width: 600px;
   margin-top: 1rem;
   border-radius: 10px;
 }
 
+
 .hero__thumb video {
   width: 100%;
+  max-width: 100%;
   height: auto;
   border-radius: 10px;
+  display: block;
 }
+
 
 .hero__pontos {
   list-style: none;
